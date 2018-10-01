@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 redis = "*"
 lxml = "*"
+"pyqt5" = "*"
 
 [dev-packages]
 
