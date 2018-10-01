@@ -1,5 +1,5 @@
 ### Installation and settings
-To install:
+To install use
 ```bash
 cd test-pyqt-redis && pipenv install
 ```
@@ -9,7 +9,7 @@ and defaults to `redis://localhost:6379/0`
 
 ### Populate Redis database
 The script reads offers data from an XML file and loads it into the Redis database.
-Input XML file should have structure similar to 
+The structure of the input file should be similar to 
 [this template](https://yandex.com/support/partnermarket/yml/about-yml.html).
 
 Usage: 
@@ -17,10 +17,10 @@ Usage:
 python3 redis_populate.py [FILENAME]
 ```
 where `FILENAME` is an XML file to extract data from 
-(defaults to `./test.xml`, which is provided in this repo)
+(defaults to `./test.xml`, which is provided in this repo).
 
 ### Run PyQt interface
 Usage:
-```bash
+``` bash
 python3 qt_interface.py
 ```
