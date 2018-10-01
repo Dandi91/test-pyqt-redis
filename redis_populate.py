@@ -30,7 +30,7 @@ def parse_offer_node(node, categories_dict):
 
         :param parent: XML node to look for attributes or child nodes
         :param name: The name of attribute or child tag
-        :return: Attribute value or child tag text processed with
+        :return: Attribute value or child tag text processed with 'transformations' function if needed
         """
         if name in parent.attrib:
             result = parent.get(name)
